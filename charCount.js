@@ -1,7 +1,7 @@
 const charCount  = (str) => { 
     let result = {}
     for (let i =0; i < str.length; i++){ 
-        let char = str[i]
+        let char = str[i].toLowerCase()
         if (/[a-z0-9]/.test(char)){ 
             if (result[char] > 0){ 
                 result[char]++
@@ -15,3 +15,5 @@ const charCount  = (str) => {
 }
 
 console.log(charCount('hello'))
+
+
